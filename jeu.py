@@ -1,117 +1,24 @@
 import pygame
 import random
+from init import *
+from unit import Unit  
 
-# Initialisation de pygame
 pygame.init()
 
-# Dimensions de la fenêtre et de la carte
-tile_size = 30
-size = 20
-width, height = size * tile_size, size * tile_size
-interface_height = 100  # Hauteur supplémentaire pour l'interface
-
-# Couleurs
-PASSABLE_COLOR = (200, 200, 200)        # Gris clair pour les cases passables
-PLAYER_COLOR = (0, 0, 255)              # Bleu pour le joueur
-PLAYER_COLOR_LIGHT = (100, 100, 255)    # Bleu clair pour le joueur capable de bouger
-ENEMY_COLOR = (255, 0, 0)               # Rouge pour les ennemis
-ENEMY_COLOR_LIGHT = (255, 100, 100)     # Rouge clair pour les ennemis capables de bouger
-SELECTED_COLOR = (0, 255, 0)            # Vert pour la sélection
-OBJECTIVE_MAJOR_COLOR = (255, 255, 0)   # Jaune pour objectif majeur
-OBJECTIVE_MINOR_COLOR = (255, 215, 0)   # Doré pour objectif mineur
-
-# Classe pour les unités
-class Unit:
-    def __init__(self, x, y, color):
-        self.x = x
-        self.y = y
-        self.color = color
-        self.selected = False
-        self.moved = False  # Indicateur de mouvement pour le tour
-        self.pv = 2  # Points de Vie
-        self.attacked_this_turn = False  # Indicateur d'attaque dans ce tour
-
-    def draw(self, screen, units, objectives):
-        """Affiche l'unité sur l'écran."""
-        rect = pygame.Rect(self.x * tile_size, self.y * tile_size, tile_size, tile_size)
-        if not self.moved:
-            color = PLAYER_COLOR_LIGHT if self.color == PLAYER_COLOR else ENEMY_COLOR_LIGHT
-        else:
-            color = self.color
-        pygame.draw.rect(screen, color, rect)
-
-        if self.selected:
-            pygame.draw.rect(screen, SELECTED_COLOR, rect, 3)
-
-        font = pygame.font.SysFont(None, 16)
-        symbols = self.get_symbols_on_same_tile(units)
-        combined_text = font.render(symbols, True, (255, 255, 255))
-        text_width = combined_text.get_width()
-        text_x = self.x * tile_size + (tile_size - text_width) // 2
-        screen.blit(combined_text, (text_x, self.y * tile_size + 5))
-
-        for obj in objectives:
-            if self.x == obj['x'] and self.y == obj['y']:
-                pygame.draw.rect(screen, (0, 255, 0), rect, 1)
-
-    def can_move(self, x, y):
-        """Vérifie si l'unité peut se déplacer vers une case."""
-        if 0 <= x < size and 0 <= y < size:
-            if abs(self.x - x) <= 1 and abs(self.y - y) <= 1:
-                return True
-        return False
-
-    def move(self, x, y):
-        """Déplace l'unité vers une case spécifiée."""
-        self.x = x
-        self.y = y
-        self.moved = True
-
-    def attack(self, target_unit, units, objectives):
-        """Attaque une unité ennemie."""
-        if self.can_move(target_unit.x, target_unit.y):
-            dx = target_unit.x - self.x
-            dy = target_unit.y - self.y
-            new_x, new_y = target_unit.x + dx, target_unit.y + dy
-
-            if target_unit.attacked_this_turn:
-                target_unit.pv -= 1
-                if target_unit.pv <= 0:
-                    units.remove(target_unit)
-                    return
-
-            if not (0 <= new_x < size and 0 <= new_y < size) or any(u.x == new_x and u.y == new_y and u.color != target_unit.color for u in units):
-                units.remove(target_unit)
-            else:
-                target_unit.move(new_x, new_y)
-                target_unit.attacked_this_turn = True
-
-    def get_symbols_on_same_tile(self, units):
-        """Retourne les symboles des unités sur la même case."""
-        symbols = [u.get_symbol() for u in units if u.x == self.x and u.y == self.y]
-        return ' '.join(symbols)
-
-    def get_symbol(self):
-        """Retourne le symbole de l'unité."""
-        return "U"
-
-# Générer la carte
+# Générer carte
 def generate_map(size):
-    """Génère une carte de taille spécifiée."""
     print([[1 for _ in range(size)] for _ in range(size)])
     return [[1 for _ in range(size)] for _ in range(size)]
 
-# Afficher la carte
+# Afficher carte
 def draw_map(screen, game_map, tile_size):
-    """Affiche la carte."""
     for y in range(size):
         for x in range(size):
             color = PASSABLE_COLOR
             pygame.draw.rect(screen, color, (x * tile_size, y * tile_size, tile_size, tile_size))
 
-# Générer des unités sur des cases passables uniquement
+# Générer unités 
 def generate_units():
-    """Génère les unités pour les joueurs et les ennemis."""
     units = []
     player_positions = [(0, i) for i in range(size)]
     enemy_positions = [(size - 1, i) for i in range(size)]
@@ -127,9 +34,11 @@ def generate_units():
     
     return units
 
-# Ajouter des objectifs à la carte
+
+
+
+# Ajouter objectifs sur la map
 def add_objectives():
-    """Ajoute des objectifs à la carte."""
     objectives = []
     center_x, center_y = size // 2, size // 2
     while True:
@@ -147,16 +56,17 @@ def add_objectives():
 
     return objectives
 
-# Afficher les objectifs
+# Afficher  objectifs sur la map
 def draw_objectives(screen, objectives, tile_size):
-    """Affiche les objectifs sur la carte."""
     for obj in objectives:
         color = OBJECTIVE_MAJOR_COLOR if obj['type'] == 'MAJOR' else OBJECTIVE_MINOR_COLOR
         pygame.draw.rect(screen, color, (obj['x'] * tile_size, obj['y'] * tile_size, tile_size, tile_size))
 
-# Calculer les scores
+
+
+
+# Calculer scores
 def calculate_scores(units, objectives):
-    """Calcule les scores des joueurs et des ennemis en fonction des objectifs contrôlés."""
     player_score = 0
     enemy_score = 0
 
@@ -168,33 +78,30 @@ def calculate_scores(units, objectives):
 
     return player_score, enemy_score
 
-# Afficher le message de changement de tour
+# Afficher message de changement de tour
 def draw_turn_indicator(screen, player_turn):
-    """Affiche l'indicateur de tour."""
+    #Affiche l'indicateur de tour
     font = pygame.font.SysFont(None, 36)
     text = "Joueur" if player_turn else "Ennemi"
     img = font.render(text, True, (255, 255, 255))
     screen.blit(img, (10, 10))
 
-# Afficher le bouton de changement de tour
+# Afficher bouton changement de tour
 def draw_end_turn_button(screen, width, height, interface_height):
-    """Affiche le bouton de fin de tour."""
     font = pygame.font.SysFont(None, 36)
     text = font.render("Terminé", True, (255, 255, 255))
     button_rect = pygame.Rect(width // 2 - 50, height, 100, interface_height - 10)
     pygame.draw.rect(screen, (100, 100, 100), button_rect)
     screen.blit(text, (width // 2 - 50 + 10, height + 10))
 
-# Vérifier si le bouton de changement de tour est cliqué
+# Vérifier click changement de tour 
 def end_turn_button_clicked(mouse_pos, width, height, interface_height):
-    """Vérifie si le bouton de fin de tour a été cliqué."""
     x, y = mouse_pos
     button_rect = pygame.Rect(width // 2 - 50, height, 100, interface_height - 10)
     return button_rect.collidepoint(x, y)
 
-# Afficher les attributs de l'unité sélectionnée
+# Afficher infos unit
 def draw_unit_attributes(screen, unit, width, height, interface_height):
-    """Affiche les attributs de l'unité sélectionnée."""
     if unit:
         font = pygame.font.SysFont(None, 24)
         pv_text = f"PV: {unit.pv} / 2"
@@ -203,9 +110,8 @@ def draw_unit_attributes(screen, unit, width, height, interface_height):
         screen.blit(unit_img, (10, height + 10))
         screen.blit(pv_img, (10, height + 40))
 
-# Afficher les scores
+# Afficher scores
 def draw_scores(screen, player_score, enemy_score, width, height):
-    """Affiche les scores des joueurs."""
     font = pygame.font.SysFont(None, 24)
     player_score_text = f"Score Joueur: {player_score}"
     enemy_score_text = f"Score Ennemi: {enemy_score}"
@@ -214,28 +120,27 @@ def draw_scores(screen, player_score, enemy_score, width, height):
     screen.blit(player_score_img, (10, height + 70))
     screen.blit(enemy_score_img, (width - 150, height + 70))
 
-# Afficher le message de victoire
+# Afficher message de victoire
 def draw_victory_message(screen, message, width, height):
-    """Affiche le message de victoire."""
     font = pygame.font.SysFont(None, 48)
     victory_img = font.render(message, True, (255, 255, 255))
     screen.blit(victory_img, (width // 2 - 100, height // 2 - 24))
 
-# Configuration de la fenêtre
+# Param  fenêtre
 screen = pygame.display.set_mode((width, height + interface_height))
 pygame.display.set_caption("Carte de 20x20 avec unités et déplacement")
 
-# Générer une carte de 20 par 20
+# Générer map de 20 par 20
 game_map = generate_map(size)
 
-# Générer les unités
+# Générer unités
 units = generate_units()
 
-# Ajouter des objectifs
+# Ajouter objectifs
 objectives = add_objectives()
 
 selected_unit = None
-player_turn = True  # True pour le tour du joueur, False pour le tour de l'ennemi
+player_turn = True  # True pour le tour du joueur, False pour le tour adverse
 units_to_move = [unit for unit in units if (unit.color == PLAYER_COLOR if player_turn else unit.color == ENEMY_COLOR)]
 player_score = 0
 enemy_score = 0
@@ -275,12 +180,16 @@ while running:
 
                     elif event.button == 3:  # Clic droit pour déplacer ou attaquer
                         if selected_unit and selected_unit.color == (PLAYER_COLOR if player_turn else ENEMY_COLOR):
+                            # Si unité adverse sur la case, on attaque
                             target_unit = [u for u in units if u.x == grid_x and u.y == grid_y and u.color != selected_unit.color]
-                            
-                            for cible in target_unit:
-                                selected_unit.attack(cible, units, objectives)
-                                
-                            if selected_unit.can_move(grid_x, grid_y):
+                            if target_unit:
+                                for cible in target_unit:
+                                    selected_unit.attack(cible, units, objectives)
+                                # NE PAS déplacer l'unité qui attaque !
+                                selected_unit.selected = False
+                                selected_unit = None
+                            # Sinon, case vide, on déplace
+                            elif selected_unit.can_move(grid_x, grid_y, units):
                                 selected_unit.move(grid_x, grid_y)
                                 selected_unit.selected = False
                                 selected_unit = None
