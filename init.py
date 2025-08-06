@@ -1,8 +1,9 @@
 # Dimensions de la fenêtre et de la carte
 tile_size = 30
 size = 20
-width, height = size * tile_size, size * tile_size
-interface_height = 150 # Hauteur supplémentaire pour l'interface
+width = 900         # Largeur de la fenêtre
+height = 600        # Hauteur de la zone de jeu (20x20 cases de 30px = 600px)
+interface_height = 200  # Hauteur de l'interface sous le terrain
 
 # Couleurs
 PASSABLE_COLOR = (200, 200, 200)        # Gris clair pour les cases passables
@@ -13,3 +14,7 @@ ENEMY_COLOR_LIGHT = (255, 100, 100)     # Rouge clair pour les ennemis capables 
 SELECTED_COLOR = (0, 255, 0)            # Vert pour la sélection
 OBJECTIVE_MAJOR_COLOR = (255, 255, 0)   # Jaune pour objectif majeur
 OBJECTIVE_MINOR_COLOR = (255, 215, 0)   # Doré pour objectif mineur
+
+# Dimensions de l'interface
+BUTTON_WIDTH = 180
+BUTTON_HEIGHT = 102

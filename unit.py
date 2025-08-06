@@ -11,8 +11,8 @@ class Unit:
         self.pv = 2  # Points de Vie
         self.attacked_this_turn = False  # Indicateur d'attaque dans ce tour
 
-    def draw(self, screen, units, objectives):
-        rect = pygame.Rect(self.x * tile_size, self.y * tile_size, tile_size, tile_size)
+    def draw(self, screen, units, objectives, terrain_x, terrain_y):
+        rect = pygame.Rect(terrain_x + self.x * tile_size, terrain_y + self.y * tile_size, tile_size, tile_size)
         if not self.moved:
             color = PLAYER_COLOR_LIGHT if self.color == PLAYER_COLOR else ENEMY_COLOR_LIGHT
         else:
@@ -26,8 +26,8 @@ class Unit:
         symbols = self.get_symbols_on_same_tile(units)
         combined_text = font.render(symbols, True, (255, 255, 255))
         text_width = combined_text.get_width()
-        text_x = self.x * tile_size + (tile_size - text_width) // 2
-        screen.blit(combined_text, (text_x, self.y * tile_size + 5))
+        text_x = terrain_x + self.x * tile_size + (tile_size - text_width) // 2
+        screen.blit(combined_text, (text_x, terrain_y + self.y * tile_size + 5))
 
         for obj in objectives:
             if self.x == obj['x'] and self.y == obj['y']:
