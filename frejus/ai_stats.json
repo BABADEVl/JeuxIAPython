@@ -1,0 +1,30 @@
+{
+  "games_played": 1,
+  "games_won": 1,
+  "total_actions": {
+    "move_major_path": 86,
+    "move_major": 9,
+    "move_minor_path": 20
+  },
+  "successful_actions": {
+    "move_major_path": 86,
+    "move_major": 9,
+    "move_minor_path": 20
+  },
+  "action_success_rate": {
+    "move_major_path": 1.0,
+    "move_major": 1.0,
+    "move_minor_path": 1.0
+  },
+  "average_score": 51,
+  "best_score": 51,
+  "strategy_effectiveness": {},
+  "learning_progress": [
+    {
+      "game": 1,
+      "win_rate": 1.0,
+      "score": 51,
+      "timestamp": 1755771004.4282005
+    }
+  ]
+}
