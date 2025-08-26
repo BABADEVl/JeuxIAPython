@@ -1,7 +1,12 @@
 import pygame
+import os
 from init import *
 
+
 class Unit:
+    # Cache des sprites pour éviter de recharger les images à chaque fois
+    _sprite_cache = {}
+
     def __init__(self, x, y, color):
         self.x = x
         self.y = y
@@ -11,6 +16,45 @@ class Unit:
         self.pv = 2
         self.attacked_this_turn = False
 
+        # Charger les sprites si disponibles
+        self._load_sprites()
+
+    def _load_sprites(self):
+        """Charge les sprites des unités depuis les assets"""
+        if not Unit._sprite_cache:  # Charger une seule fois
+            try:
+                # Sprites pour unité joueur
+                player_sprite_path = "assets/player_unit.png"
+                player_sprite_weak_path = "assets/player_unit_weak.png"
+
+                # Sprites pour unité ennemie
+                enemy_sprite_path = "assets/enemy_unit.png"
+                enemy_sprite_weak_path = "assets/enemy_unit_weak.png"
+
+                if os.path.exists(player_sprite_path):
+                    Unit._sprite_cache['player'] = pygame.transform.scale(
+                        pygame.image.load(player_sprite_path), (tile_size, tile_size)
+                    )
+
+                if os.path.exists(player_sprite_weak_path):
+                    Unit._sprite_cache['player_weak'] = pygame.transform.scale(
+                        pygame.image.load(player_sprite_weak_path), (tile_size, tile_size)
+                    )
+
+                if os.path.exists(enemy_sprite_path):
+                    Unit._sprite_cache['enemy'] = pygame.transform.scale(
+                        pygame.image.load(enemy_sprite_path), (tile_size, tile_size)
+                    )
+
+                if os.path.exists(enemy_sprite_weak_path):
+                    Unit._sprite_cache['enemy_weak'] = pygame.transform.scale(
+                        pygame.image.load(enemy_sprite_weak_path), (tile_size, tile_size)
+                    )
+
+            except pygame.error as e:
+                print(f"Erreur lors du chargement des sprites: {e}")
+                # Les sprites ne seront pas utilisés, on utilisera les couleurs par défaut
+
     def draw(self, screen, units, objectives, terrain_x, terrain_y):
         rect = pygame.Rect(
             terrain_x + self.x * tile_size,
@@ -18,19 +62,78 @@ class Unit:
             tile_size,
             tile_size
         )
-        color = PLAYER_COLOR_LIGHT if self.color == PLAYER_COLOR and not self.moved else ENEMY_COLOR_LIGHT if self.color == ENEMY_COLOR and not self.moved else self.color
-        pygame.draw.rect(screen, color, rect)
+
+        # Déterminer la couleur ou le sprite à utiliser
+        sprite_key = None
+        color = None
+
+        if self.color == PLAYER_COLOR:
+            if self.pv == 1 and 'player_weak' in Unit._sprite_cache:
+                sprite_key = 'player_weak'
+            elif 'player' in Unit._sprite_cache:
+                sprite_key = 'player'
+            else:
+                color = PLAYER_COLOR_LIGHT if not self.moved else PLAYER_COLOR
+        else:  # ENEMY_COLOR
+            if self.pv == 1 and 'enemy_weak' in Unit._sprite_cache:
+                sprite_key = 'enemy_weak'
+            elif 'enemy' in Unit._sprite_cache:
+                sprite_key = 'enemy'
+            else:
+                color = ENEMY_COLOR_LIGHT if not self.moved else ENEMY_COLOR
+
+        # Dessiner le sprite ou la couleur
+        if sprite_key:
+            # Dessiner d'abord un fond coloré si l'unité n'a pas bougé
+            if not self.moved:
+                bg_color = PLAYER_COLOR_LIGHT if self.color == PLAYER_COLOR else ENEMY_COLOR_LIGHT
+                pygame.draw.rect(screen, bg_color, rect)
+
+            # Dessiner le sprite par dessus
+            screen.blit(Unit._sprite_cache[sprite_key], rect)
+        else:
+            # Utiliser les couleurs par défaut si pas de sprite
+            pygame.draw.rect(screen, color, rect)
+
+        # Bordure de sélection
         if self.selected:
             pygame.draw.rect(screen, SELECTED_COLOR, rect, 3)
+
+        # Afficher les symboles texte (pour compatibilité)
         font = pygame.font.SysFont(None, 16)
         symbols = self.get_symbols_on_same_tile(units)
-        combined_text = font.render(symbols, True, (255, 255, 255))
-        text_width = combined_text.get_width()
-        text_x = terrain_x + self.x * tile_size + (tile_size - text_width) // 2
-        screen.blit(combined_text, (text_x, terrain_y + self.y * tile_size + 5))
+        if symbols.strip():  # Seulement si il y a des symboles
+            combined_text = font.render(symbols, True, (255, 255, 255))
+            text_width = combined_text.get_width()
+            text_x = terrain_x + self.x * tile_size + (tile_size - text_width) // 2
+
+            # Fond semi-transparent pour le texte
+            text_rect = pygame.Rect(text_x - 2, terrain_y + self.y * tile_size + 5, text_width + 4, 12)
+            overlay = pygame.Surface((text_width + 4, 12))
+            overlay.set_alpha(128)
+            overlay.fill((0, 0, 0))
+            screen.blit(overlay, (text_x - 2, terrain_y + self.y * tile_size + 5))
+
+            screen.blit(combined_text, (text_x, terrain_y + self.y * tile_size + 5))
+
+        # Indicateur de PV faible
+        if self.pv == 1:
+            # Petite croix rouge si PV faible
+            cross_size = 4
+            cross_x = terrain_x + self.x * tile_size + tile_size - cross_size - 2
+            cross_y = terrain_y + self.y * tile_size + 2
+            pygame.draw.line(screen, (255, 0, 0),
+                             (cross_x, cross_y),
+                             (cross_x + cross_size, cross_y + cross_size), 2)
+            pygame.draw.line(screen, (255, 0, 0),
+                             (cross_x + cross_size, cross_y),
+                             (cross_x, cross_y + cross_size), 2)
+
+        # Bordure verte si sur un objectif
         for obj in objectives:
             if self.x == obj['x'] and self.y == obj['y']:
-                pygame.draw.rect(screen, (0, 255, 0), rect, 1)
+                pygame.draw.rect(screen, (0, 255, 0), rect, 2)
+                break
 
     def can_move(self, x, y, units):
         if 0 <= x < size and 0 <= y < size and abs(self.x - x) <= 1 and abs(self.y - y) <= 1:
@@ -52,9 +155,9 @@ class Unit:
 
             # Vérifie si la case de repoussement est un obstacle
             obstacle = (
-                new_x < 0 or new_x >= size or
-                new_y < 0 or new_y >= size or
-                any(u.x == new_x and u.y == new_y for u in units)
+                    new_x < 0 or new_x >= size or
+                    new_y < 0 or new_y >= size or
+                    any(u.x == new_x and u.y == new_y for u in units)
             )
 
             if not target_unit.moved:

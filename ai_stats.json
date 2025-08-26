@@ -1,0 +1,27 @@
+{
+  "games_played": 1,
+  "games_won": 0,
+  "total_actions": {
+    "move_major_path": 59,
+    "attack": 1
+  },
+  "successful_actions": {
+    "move_major_path": 59,
+    "attack": 1
+  },
+  "action_success_rate": {
+    "move_major_path": 1.0,
+    "attack": 1.0
+  },
+  "average_score": 0,
+  "best_score": 0,
+  "strategy_effectiveness": {},
+  "learning_progress": [
+    {
+      "game": 1,
+      "win_rate": 0.0,
+      "score": 0,
+      "timestamp": 1756199613.2510784
+    }
+  ]
+}
