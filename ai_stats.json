@@ -1,0 +1,2112 @@
+{
+  "games_played": 5701,
+  "games_won": 4493,
+  "total_actions": {
+    "move_major_path": 282640,
+    "attack": 77049,
+    "move_major": 36131,
+    "move_minor_path": 652935,
+    "move_minor": 43677,
+    "strategic_position": 385311,
+    "group": 595577,
+    "explore": 573575,
+    "push_kill": 9419,
+    "attack_weak": 1124,
+    "protect_ally": 29254,
+    "flee": 21873
+  },
+  "successful_actions": {
+    "move_major_path": 282640,
+    "attack": 77049,
+    "move_major": 36131,
+    "move_minor_path": 652935,
+    "move_minor": 43677,
+    "strategic_position": 385311,
+    "group": 595577,
+    "explore": 573575,
+    "push_kill": 9419,
+    "attack_weak": 1124,
+    "protect_ally": 29254,
+    "flee": 21873
+  },
+  "action_success_rate": {
+    "move_major_path": 1.0,
+    "attack": 1.0,
+    "move_major": 1.0,
+    "move_minor_path": 1.0,
+    "move_minor": 1.0,
+    "strategic_position": 1.0,
+    "group": 1.0,
+    "explore": 1.0,
+    "push_kill": 1.0,
+    "attack_weak": 1.0,
+    "protect_ally": 1.0,
+    "flee": 1.0
+  },
+  "average_score": 1.1897912646904094,
+  "best_score": 53,
+  "strategy_effectiveness": {},
+  "learning_progress": [
+    {
+      "game": 5602,
+      "win_rate": 0.7872188504105676,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.5931883561559161,
+        "defensive": 0.05,
+        "objective_focused": 0.25355258128026237,
+        "exploration": 0.1807095895661431,
+        "group_play": 0.10704988008780386
+      },
+      "timestamp": 1756923614.3745012
+    },
+    {
+      "game": 5603,
+      "win_rate": 0.7872568266999822,
+      "score": 3,
+      "strategy_weights": {
+        "aggressive": 0.5931883561559161,
+        "defensive": 0.05,
+        "objective_focused": 0.25355258128026237,
+        "exploration": 0.1807095895661431,
+        "group_play": 0.10704988008780386
+      },
+      "timestamp": 1756923614.53773
+    },
+    {
+      "game": 5604,
+      "win_rate": 0.7872947894361171,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.5931883561559161,
+        "defensive": 0.05,
+        "objective_focused": 0.25355258128026237,
+        "exploration": 0.1807095895661431,
+        "group_play": 0.10704988008780386
+      },
+      "timestamp": 1756923614.6876886
+    },
+    {
+      "game": 5605,
+      "win_rate": 0.7873327386262265,
+      "score": 1,
+      "strategy_weights": {
+        "aggressive": 0.5931883561559161,
+        "defensive": 0.05,
+        "objective_focused": 0.25355258128026237,
+        "exploration": 0.1807095895661431,
+        "group_play": 0.10704988008780386
+      },
+      "timestamp": 1756923614.8292303
+    },
+    {
+      "game": 5606,
+      "win_rate": 0.7873706742775598,
+      "score": 1,
+      "strategy_weights": {
+        "aggressive": 0.5863693757876423,
+        "defensive": 0.05,
+        "objective_focused": 0.218885524378774,
+        "exploration": 0.1680653175430512,
+        "group_play": 0.08502643305021615
+      },
+      "timestamp": 1756923615.011523
+    },
+    {
+      "game": 5607,
+      "win_rate": 0.7874085963973605,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.5863693757876423,
+        "defensive": 0.05,
+        "objective_focused": 0.218885524378774,
+        "exploration": 0.1680653175430512,
+        "group_play": 0.08502643305021615
+      },
+      "timestamp": 1756923615.2189035
+    },
+    {
+      "game": 5608,
+      "win_rate": 0.7874465049928673,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.5863693757876423,
+        "defensive": 0.05,
+        "objective_focused": 0.218885524378774,
+        "exploration": 0.1680653175430512,
+        "group_play": 0.08502643305021615
+      },
+      "timestamp": 1756923615.3378463
+    },
+    {
+      "game": 5609,
+      "win_rate": 0.7874844000713139,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.5863693757876423,
+        "defensive": 0.05,
+        "objective_focused": 0.218885524378774,
+        "exploration": 0.1680653175430512,
+        "group_play": 0.08502643305021615
+      },
+      "timestamp": 1756923615.562859
+    },
+    {
+      "game": 5610,
+      "win_rate": 0.7873440285204991,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.5863693757876423,
+        "defensive": 0.05,
+        "objective_focused": 0.218885524378774,
+        "exploration": 0.1680653175430512,
+        "group_play": 0.08502643305021615
+      },
+      "timestamp": 1756923615.7607453
+    },
+    {
+      "game": 5611,
+      "win_rate": 0.787381928355017,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6332763562632611,
+        "defensive": 0.09687342255974835,
+        "objective_focused": 0.17665313090730841,
+        "exploration": 0.15401380243751017,
+        "group_play": 0.08111878875199201
+      },
+      "timestamp": 1756923615.994285
+    },
+    {
+      "game": 5612,
+      "win_rate": 0.7874198146828225,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6332763562632611,
+        "defensive": 0.09687342255974835,
+        "objective_focused": 0.17665313090730841,
+        "exploration": 0.15401380243751017,
+        "group_play": 0.08111878875199201
+      },
+      "timestamp": 1756923616.1580558
+    },
+    {
+      "game": 5613,
+      "win_rate": 0.7874576875111349,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6332763562632611,
+        "defensive": 0.09687342255974835,
+        "objective_focused": 0.17665313090730841,
+        "exploration": 0.15401380243751017,
+        "group_play": 0.08111878875199201
+      },
+      "timestamp": 1756923616.3444922
+    },
+    {
+      "game": 5614,
+      "win_rate": 0.7874955468471678,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6332763562632611,
+        "defensive": 0.09687342255974835,
+        "objective_focused": 0.17665313090730841,
+        "exploration": 0.15401380243751017,
+        "group_play": 0.08111878875199201
+      },
+      "timestamp": 1756923616.453204
+    },
+    {
+      "game": 5615,
+      "win_rate": 0.78753339269813,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6332763562632611,
+        "defensive": 0.09687342255974835,
+        "objective_focused": 0.17665313090730841,
+        "exploration": 0.15401380243751017,
+        "group_play": 0.08111878875199201
+      },
+      "timestamp": 1756923616.6560035
+    },
+    {
+      "game": 5616,
+      "win_rate": 0.7875712250712251,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6441749255814953,
+        "defensive": 0.052972343929150595,
+        "objective_focused": 0.21813314897896252,
+        "exploration": 0.1676989238852411,
+        "group_play": 0.12580198138238524
+      },
+      "timestamp": 1756923616.839865
+    },
+    {
+      "game": 5617,
+      "win_rate": 0.7876090439736514,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6441749255814953,
+        "defensive": 0.052972343929150595,
+        "objective_focused": 0.21813314897896252,
+        "exploration": 0.1676989238852411,
+        "group_play": 0.12580198138238524
+      },
+      "timestamp": 1756923616.973559
+    },
+    {
+      "game": 5618,
+      "win_rate": 0.7876468494126023,
+      "score": 3,
+      "strategy_weights": {
+        "aggressive": 0.6441749255814953,
+        "defensive": 0.052972343929150595,
+        "objective_focused": 0.21813314897896252,
+        "exploration": 0.1676989238852411,
+        "group_play": 0.12580198138238524
+      },
+      "timestamp": 1756923617.1544013
+    },
+    {
+      "game": 5619,
+      "win_rate": 0.7875066737853711,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6441749255814953,
+        "defensive": 0.052972343929150595,
+        "objective_focused": 0.21813314897896252,
+        "exploration": 0.1676989238852411,
+        "group_play": 0.12580198138238524
+      },
+      "timestamp": 1756923617.2920516
+    },
+    {
+      "game": 5620,
+      "win_rate": 0.7875444839857652,
+      "score": 3,
+      "strategy_weights": {
+        "aggressive": 0.6441749255814953,
+        "defensive": 0.052972343929150595,
+        "objective_focused": 0.21813314897896252,
+        "exploration": 0.1676989238852411,
+        "group_play": 0.12580198138238524
+      },
+      "timestamp": 1756923617.4205515
+    },
+    {
+      "game": 5621,
+      "win_rate": 0.7875822807329657,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6226746161823156,
+        "defensive": 0.06420018018359376,
+        "objective_focused": 0.22081360766736588,
+        "exploration": 0.16703958529121793,
+        "group_play": 0.17085014475766935
+      },
+      "timestamp": 1756923617.6545362
+    },
+    {
+      "game": 5622,
+      "win_rate": 0.7876200640341515,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6226746161823156,
+        "defensive": 0.06420018018359376,
+        "objective_focused": 0.22081360766736588,
+        "exploration": 0.16703958529121793,
+        "group_play": 0.17085014475766935
+      },
+      "timestamp": 1756923617.8048763
+    },
+    {
+      "game": 5623,
+      "win_rate": 0.7876578338964966,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6226746161823156,
+        "defensive": 0.06420018018359376,
+        "objective_focused": 0.22081360766736588,
+        "exploration": 0.16703958529121793,
+        "group_play": 0.17085014475766935
+      },
+      "timestamp": 1756923617.9393451
+    },
+    {
+      "game": 5624,
+      "win_rate": 0.7876955903271693,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6226746161823156,
+        "defensive": 0.06420018018359376,
+        "objective_focused": 0.22081360766736588,
+        "exploration": 0.16703958529121793,
+        "group_play": 0.17085014475766935
+      },
+      "timestamp": 1756923618.1271434
+    },
+    {
+      "game": 5625,
+      "win_rate": 0.7877333333333333,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6226746161823156,
+        "defensive": 0.06420018018359376,
+        "objective_focused": 0.22081360766736588,
+        "exploration": 0.16703958529121793,
+        "group_play": 0.17085014475766935
+      },
+      "timestamp": 1756923618.3111289
+    },
+    {
+      "game": 5626,
+      "win_rate": 0.7877710629221472,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.5775261678600692,
+        "defensive": 0.05,
+        "objective_focused": 0.26047285442962226,
+        "exploration": 0.12532285969010998,
+        "group_play": 0.1760065090782711
+      },
+      "timestamp": 1756923618.4699757
+    },
+    {
+      "game": 5627,
+      "win_rate": 0.7878087791007642,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.5775261678600692,
+        "defensive": 0.05,
+        "objective_focused": 0.26047285442962226,
+        "exploration": 0.12532285969010998,
+        "group_play": 0.1760065090782711
+      },
+      "timestamp": 1756923618.7654767
+    },
+    {
+      "game": 5628,
+      "win_rate": 0.7878464818763327,
+      "score": 3,
+      "strategy_weights": {
+        "aggressive": 0.5775261678600692,
+        "defensive": 0.05,
+        "objective_focused": 0.26047285442962226,
+        "exploration": 0.12532285969010998,
+        "group_play": 0.1760065090782711
+      },
+      "timestamp": 1756923618.95931
+    },
+    {
+      "game": 5629,
+      "win_rate": 0.7877065198081364,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.5775261678600692,
+        "defensive": 0.05,
+        "objective_focused": 0.26047285442962226,
+        "exploration": 0.12532285969010998,
+        "group_play": 0.1760065090782711
+      },
+      "timestamp": 1756923619.116183
+    },
+    {
+      "game": 5630,
+      "win_rate": 0.7875666074600355,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.5775261678600692,
+        "defensive": 0.05,
+        "objective_focused": 0.26047285442962226,
+        "exploration": 0.12532285969010998,
+        "group_play": 0.1760065090782711
+      },
+      "timestamp": 1756923619.253144
+    },
+    {
+      "game": 5631,
+      "win_rate": 0.787604333155745,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.5501762515545222,
+        "defensive": 0.06613450380195925,
+        "objective_focused": 0.24577609590835225,
+        "exploration": 0.15703624509374597,
+        "group_play": 0.2030203165876603
+      },
+      "timestamp": 1756923619.4867878
+    },
+    {
+      "game": 5632,
+      "win_rate": 0.7876420454545454,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.5501762515545222,
+        "defensive": 0.06613450380195925,
+        "objective_focused": 0.24577609590835225,
+        "exploration": 0.15703624509374597,
+        "group_play": 0.2030203165876603
+      },
+      "timestamp": 1756923619.6448061
+    },
+    {
+      "game": 5633,
+      "win_rate": 0.7876797443635718,
+      "score": 1,
+      "strategy_weights": {
+        "aggressive": 0.5501762515545222,
+        "defensive": 0.06613450380195925,
+        "objective_focused": 0.24577609590835225,
+        "exploration": 0.15703624509374597,
+        "group_play": 0.2030203165876603
+      },
+      "timestamp": 1756923619.7711415
+    },
+    {
+      "game": 5634,
+      "win_rate": 0.7877174298899539,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.5501762515545222,
+        "defensive": 0.06613450380195925,
+        "objective_focused": 0.24577609590835225,
+        "exploration": 0.15703624509374597,
+        "group_play": 0.2030203165876603
+      },
+      "timestamp": 1756923619.9491937
+    },
+    {
+      "game": 5635,
+      "win_rate": 0.7877551020408163,
+      "score": 1,
+      "strategy_weights": {
+        "aggressive": 0.5501762515545222,
+        "defensive": 0.06613450380195925,
+        "objective_focused": 0.24577609590835225,
+        "exploration": 0.15703624509374597,
+        "group_play": 0.2030203165876603
+      },
+      "timestamp": 1756923620.0837698
+    },
+    {
+      "game": 5636,
+      "win_rate": 0.7877927608232789,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.5994036328794898,
+        "defensive": 0.05,
+        "objective_focused": 0.22311186603761185,
+        "exploration": 0.12229363136711749,
+        "group_play": 0.18396017872276005
+      },
+      "timestamp": 1756923620.296195
+    },
+    {
+      "game": 5637,
+      "win_rate": 0.7878304062444562,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.5994036328794898,
+        "defensive": 0.05,
+        "objective_focused": 0.22311186603761185,
+        "exploration": 0.12229363136711749,
+        "group_play": 0.18396017872276005
+      },
+      "timestamp": 1756923620.4413905
+    },
+    {
+      "game": 5638,
+      "win_rate": 0.7876906704505143,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.5994036328794898,
+        "defensive": 0.05,
+        "objective_focused": 0.22311186603761185,
+        "exploration": 0.12229363136711749,
+        "group_play": 0.18396017872276005
+      },
+      "timestamp": 1756923620.6446295
+    },
+    {
+      "game": 5639,
+      "win_rate": 0.7877283206242242,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.5994036328794898,
+        "defensive": 0.05,
+        "objective_focused": 0.22311186603761185,
+        "exploration": 0.12229363136711749,
+        "group_play": 0.18396017872276005
+      },
+      "timestamp": 1756923620.867952
+    },
+    {
+      "game": 5640,
+      "win_rate": 0.7877659574468086,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.5994036328794898,
+        "defensive": 0.05,
+        "objective_focused": 0.22311186603761185,
+        "exploration": 0.12229363136711749,
+        "group_play": 0.18396017872276005
+      },
+      "timestamp": 1756923621.0263357
+    },
+    {
+      "game": 5641,
+      "win_rate": 0.7878035809253678,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6055654741353876,
+        "defensive": 0.06465005776558706,
+        "objective_focused": 0.17958839941281574,
+        "exploration": 0.11454807058139439,
+        "group_play": 0.1468954400866457
+      },
+      "timestamp": 1756923621.1751966
+    },
+    {
+      "game": 5642,
+      "win_rate": 0.7878411910669976,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6055654741353876,
+        "defensive": 0.06465005776558706,
+        "objective_focused": 0.17958839941281574,
+        "exploration": 0.11454807058139439,
+        "group_play": 0.1468954400866457
+      },
+      "timestamp": 1756923621.3398378
+    },
+    {
+      "game": 5643,
+      "win_rate": 0.7878787878787878,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6055654741353876,
+        "defensive": 0.06465005776558706,
+        "objective_focused": 0.17958839941281574,
+        "exploration": 0.11454807058139439,
+        "group_play": 0.1468954400866457
+      },
+      "timestamp": 1756923621.5442877
+    },
+    {
+      "game": 5644,
+      "win_rate": 0.7879163713678242,
+      "score": 1,
+      "strategy_weights": {
+        "aggressive": 0.6055654741353876,
+        "defensive": 0.06465005776558706,
+        "objective_focused": 0.17958839941281574,
+        "exploration": 0.11454807058139439,
+        "group_play": 0.1468954400866457
+      },
+      "timestamp": 1756923621.707748
+    },
+    {
+      "game": 5645,
+      "win_rate": 0.7879539415411869,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6055654741353876,
+        "defensive": 0.06465005776558706,
+        "objective_focused": 0.17958839941281574,
+        "exploration": 0.11454807058139439,
+        "group_play": 0.1468954400866457
+      },
+      "timestamp": 1756923621.8925676
+    },
+    {
+      "game": 5646,
+      "win_rate": 0.7879914984059511,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6329270717790898,
+        "defensive": 0.08761182971326448,
+        "objective_focused": 0.18836237860284952,
+        "exploration": 0.12478918819998686,
+        "group_play": 0.1260545959228981
+      },
+      "timestamp": 1756923622.04666
+    },
+    {
+      "game": 5647,
+      "win_rate": 0.7880290419691872,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6329270717790898,
+        "defensive": 0.08761182971326448,
+        "objective_focused": 0.18836237860284952,
+        "exploration": 0.12478918819998686,
+        "group_play": 0.1260545959228981
+      },
+      "timestamp": 1756923622.2034612
+    },
+    {
+      "game": 5648,
+      "win_rate": 0.7880665722379604,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6329270717790898,
+        "defensive": 0.08761182971326448,
+        "objective_focused": 0.18836237860284952,
+        "exploration": 0.12478918819998686,
+        "group_play": 0.1260545959228981
+      },
+      "timestamp": 1756923622.3206437
+    },
+    {
+      "game": 5649,
+      "win_rate": 0.7881040892193308,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6329270717790898,
+        "defensive": 0.08761182971326448,
+        "objective_focused": 0.18836237860284952,
+        "exploration": 0.12478918819998686,
+        "group_play": 0.1260545959228981
+      },
+      "timestamp": 1756923622.521819
+    },
+    {
+      "game": 5650,
+      "win_rate": 0.7879646017699115,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6329270717790898,
+        "defensive": 0.08761182971326448,
+        "objective_focused": 0.18836237860284952,
+        "exploration": 0.12478918819998686,
+        "group_play": 0.1260545959228981
+      },
+      "timestamp": 1756923622.6817293
+    },
+    {
+      "game": 5651,
+      "win_rate": 0.7878251636878428,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6488974446600602,
+        "defensive": 0.08753627849902448,
+        "objective_focused": 0.18266449482350888,
+        "exploration": 0.14281869549792114,
+        "group_play": 0.09548721298789964
+      },
+      "timestamp": 1756923622.8832715
+    },
+    {
+      "game": 5652,
+      "win_rate": 0.7876857749469215,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6488974446600602,
+        "defensive": 0.08753627849902448,
+        "objective_focused": 0.18266449482350888,
+        "exploration": 0.14281869549792114,
+        "group_play": 0.09548721298789964
+      },
+      "timestamp": 1756923623.0501366
+    },
+    {
+      "game": 5653,
+      "win_rate": 0.7877233327436759,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6488974446600602,
+        "defensive": 0.08753627849902448,
+        "objective_focused": 0.18266449482350888,
+        "exploration": 0.14281869549792114,
+        "group_play": 0.09548721298789964
+      },
+      "timestamp": 1756923623.17057
+    },
+    {
+      "game": 5654,
+      "win_rate": 0.7877608772550406,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6488974446600602,
+        "defensive": 0.08753627849902448,
+        "objective_focused": 0.18266449482350888,
+        "exploration": 0.14281869549792114,
+        "group_play": 0.09548721298789964
+      },
+      "timestamp": 1756923623.3468704
+    },
+    {
+      "game": 5655,
+      "win_rate": 0.7877984084880637,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6488974446600602,
+        "defensive": 0.08753627849902448,
+        "objective_focused": 0.18266449482350888,
+        "exploration": 0.14281869549792114,
+        "group_play": 0.09548721298789964
+      },
+      "timestamp": 1756923623.5361779
+    },
+    {
+      "game": 5656,
+      "win_rate": 0.7878359264497878,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6621754129921519,
+        "defensive": 0.12737557101378616,
+        "objective_focused": 0.16984040107854298,
+        "exploration": 0.13082144164490578,
+        "group_play": 0.13208647652779537
+      },
+      "timestamp": 1756923623.6854217
+    },
+    {
+      "game": 5657,
+      "win_rate": 0.7878734311472512,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6621754129921519,
+        "defensive": 0.12737557101378616,
+        "objective_focused": 0.16984040107854298,
+        "exploration": 0.13082144164490578,
+        "group_play": 0.13208647652779537
+      },
+      "timestamp": 1756923623.865448
+    },
+    {
+      "game": 5658,
+      "win_rate": 0.7879109225874867,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6621754129921519,
+        "defensive": 0.12737557101378616,
+        "objective_focused": 0.16984040107854298,
+        "exploration": 0.13082144164490578,
+        "group_play": 0.13208647652779537
+      },
+      "timestamp": 1756923624.0369194
+    },
+    {
+      "game": 5659,
+      "win_rate": 0.7879484007775225,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6621754129921519,
+        "defensive": 0.12737557101378616,
+        "objective_focused": 0.16984040107854298,
+        "exploration": 0.13082144164490578,
+        "group_play": 0.13208647652779537
+      },
+      "timestamp": 1756923624.251623
+    },
+    {
+      "game": 5660,
+      "win_rate": 0.7879858657243817,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6621754129921519,
+        "defensive": 0.12737557101378616,
+        "objective_focused": 0.16984040107854298,
+        "exploration": 0.13082144164490578,
+        "group_play": 0.13208647652779537
+      },
+      "timestamp": 1756923624.4665222
+    },
+    {
+      "game": 5661,
+      "win_rate": 0.7880233174350821,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.705140725553949,
+        "defensive": 0.0852657747618164,
+        "objective_focused": 0.19580519612373626,
+        "exploration": 0.10765497953837586,
+        "group_play": 0.1793377463545519
+      },
+      "timestamp": 1756923624.6759403
+    },
+    {
+      "game": 5662,
+      "win_rate": 0.7880607559166373,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.705140725553949,
+        "defensive": 0.0852657747618164,
+        "objective_focused": 0.19580519612373626,
+        "exploration": 0.10765497953837586,
+        "group_play": 0.1793377463545519
+      },
+      "timestamp": 1756923624.8219705
+    },
+    {
+      "game": 5663,
+      "win_rate": 0.7880981811760551,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.705140725553949,
+        "defensive": 0.0852657747618164,
+        "objective_focused": 0.19580519612373626,
+        "exploration": 0.10765497953837586,
+        "group_play": 0.1793377463545519
+      },
+      "timestamp": 1756923625.0212839
+    },
+    {
+      "game": 5664,
+      "win_rate": 0.7879590395480226,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.705140725553949,
+        "defensive": 0.0852657747618164,
+        "objective_focused": 0.19580519612373626,
+        "exploration": 0.10765497953837586,
+        "group_play": 0.1793377463545519
+      },
+      "timestamp": 1756923625.316034
+    },
+    {
+      "game": 5665,
+      "win_rate": 0.7879964695498676,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.705140725553949,
+        "defensive": 0.0852657747618164,
+        "objective_focused": 0.19580519612373626,
+        "exploration": 0.10765497953837586,
+        "group_play": 0.1793377463545519
+      },
+      "timestamp": 1756923625.4700549
+    },
+    {
+      "game": 5666,
+      "win_rate": 0.7880338863395694,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.7025429184652773,
+        "defensive": 0.05945996284942606,
+        "objective_focused": 0.24326543695455527,
+        "exploration": 0.10459592690060752,
+        "group_play": 0.15655294634591946
+      },
+      "timestamp": 1756923625.6993134
+    },
+    {
+      "game": 5667,
+      "win_rate": 0.7880712899241221,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.7025429184652773,
+        "defensive": 0.05945996284942606,
+        "objective_focused": 0.24326543695455527,
+        "exploration": 0.10459592690060752,
+        "group_play": 0.15655294634591946
+      },
+      "timestamp": 1756923625.8719332
+    },
+    {
+      "game": 5668,
+      "win_rate": 0.7879322512350035,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.7025429184652773,
+        "defensive": 0.05945996284942606,
+        "objective_focused": 0.24326543695455527,
+        "exploration": 0.10459592690060752,
+        "group_play": 0.15655294634591946
+      },
+      "timestamp": 1756923626.0260189
+    },
+    {
+      "game": 5669,
+      "win_rate": 0.7879696595519492,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.7025429184652773,
+        "defensive": 0.05945996284942606,
+        "objective_focused": 0.24326543695455527,
+        "exploration": 0.10459592690060752,
+        "group_play": 0.15655294634591946
+      },
+      "timestamp": 1756923626.2158747
+    },
+    {
+      "game": 5670,
+      "win_rate": 0.7878306878306879,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.7025429184652773,
+        "defensive": 0.05945996284942606,
+        "objective_focused": 0.24326543695455527,
+        "exploration": 0.10459592690060752,
+        "group_play": 0.15655294634591946
+      },
+      "timestamp": 1756923626.3674917
+    },
+    {
+      "game": 5671,
+      "win_rate": 0.7878681008640451,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.7019687594793173,
+        "defensive": 0.10082352494300621,
+        "objective_focused": 0.20912366928171489,
+        "exploration": 0.08207262512056873,
+        "group_play": 0.18583815075843071
+      },
+      "timestamp": 1756923626.5257168
+    },
+    {
+      "game": 5672,
+      "win_rate": 0.7879055007052186,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.7019687594793173,
+        "defensive": 0.10082352494300621,
+        "objective_focused": 0.20912366928171489,
+        "exploration": 0.08207262512056873,
+        "group_play": 0.18583815075843071
+      },
+      "timestamp": 1756923626.8098004
+    },
+    {
+      "game": 5673,
+      "win_rate": 0.7879428873611846,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.7019687594793173,
+        "defensive": 0.10082352494300621,
+        "objective_focused": 0.20912366928171489,
+        "exploration": 0.08207262512056873,
+        "group_play": 0.18583815075843071
+      },
+      "timestamp": 1756923626.9558966
+    },
+    {
+      "game": 5674,
+      "win_rate": 0.7879802608389144,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.7019687594793173,
+        "defensive": 0.10082352494300621,
+        "objective_focused": 0.20912366928171489,
+        "exploration": 0.08207262512056873,
+        "group_play": 0.18583815075843071
+      },
+      "timestamp": 1756923627.0956202
+    },
+    {
+      "game": 5675,
+      "win_rate": 0.7880176211453744,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.7019687594793173,
+        "defensive": 0.10082352494300621,
+        "objective_focused": 0.20912366928171489,
+        "exploration": 0.08207262512056873,
+        "group_play": 0.18583815075843071
+      },
+      "timestamp": 1756923627.2648773
+    },
+    {
+      "game": 5676,
+      "win_rate": 0.7880549682875264,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6809698757833829,
+        "defensive": 0.10181183447805953,
+        "objective_focused": 0.19231324119989912,
+        "exploration": 0.05,
+        "group_play": 0.22263590791316443
+      },
+      "timestamp": 1756923627.5022867
+    },
+    {
+      "game": 5677,
+      "win_rate": 0.788092302272327,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6809698757833829,
+        "defensive": 0.10181183447805953,
+        "objective_focused": 0.19231324119989912,
+        "exploration": 0.05,
+        "group_play": 0.22263590791316443
+      },
+      "timestamp": 1756923627.6908424
+    },
+    {
+      "game": 5678,
+      "win_rate": 0.7881296231067277,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6809698757833829,
+        "defensive": 0.10181183447805953,
+        "objective_focused": 0.19231324119989912,
+        "exploration": 0.05,
+        "group_play": 0.22263590791316443
+      },
+      "timestamp": 1756923627.8826108
+    },
+    {
+      "game": 5679,
+      "win_rate": 0.7879908434583554,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6809698757833829,
+        "defensive": 0.10181183447805953,
+        "objective_focused": 0.19231324119989912,
+        "exploration": 0.05,
+        "group_play": 0.22263590791316443
+      },
+      "timestamp": 1756923628.0911016
+    },
+    {
+      "game": 5680,
+      "win_rate": 0.7878521126760564,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.6809698757833829,
+        "defensive": 0.10181183447805953,
+        "objective_focused": 0.19231324119989912,
+        "exploration": 0.05,
+        "group_play": 0.22263590791316443
+      },
+      "timestamp": 1756923628.301254
+    },
+    {
+      "game": 5681,
+      "win_rate": 0.7878894560816757,
+      "score": 1,
+      "strategy_weights": {
+        "aggressive": 0.7073958492963717,
+        "defensive": 0.05604227613082586,
+        "objective_focused": 0.185360992218596,
+        "exploration": 0.09440177523253729,
+        "group_play": 0.18382075665164516
+      },
+      "timestamp": 1756923628.5121276
+    },
+    {
+      "game": 5682,
+      "win_rate": 0.7879267863428371,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.7073958492963717,
+        "defensive": 0.05604227613082586,
+        "objective_focused": 0.185360992218596,
+        "exploration": 0.09440177523253729,
+        "group_play": 0.18382075665164516
+      },
+      "timestamp": 1756923628.6391494
+    },
+    {
+      "game": 5683,
+      "win_rate": 0.7879641034664789,
+      "score": 3,
+      "strategy_weights": {
+        "aggressive": 0.7073958492963717,
+        "defensive": 0.05604227613082586,
+        "objective_focused": 0.185360992218596,
+        "exploration": 0.09440177523253729,
+        "group_play": 0.18382075665164516
+      },
+      "timestamp": 1756923628.8615136
+    },
+    {
+      "game": 5684,
+      "win_rate": 0.7880014074595355,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.7073958492963717,
+        "defensive": 0.05604227613082586,
+        "objective_focused": 0.185360992218596,
+        "exploration": 0.09440177523253729,
+        "group_play": 0.18382075665164516
+      },
+      "timestamp": 1756923629.0263548
+    },
+    {
+      "game": 5685,
+      "win_rate": 0.7880386983289358,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.7073958492963717,
+        "defensive": 0.05604227613082586,
+        "objective_focused": 0.185360992218596,
+        "exploration": 0.09440177523253729,
+        "group_play": 0.18382075665164516
+      },
+      "timestamp": 1756923629.1801827
+    },
+    {
+      "game": 5686,
+      "win_rate": 0.788075976081604,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.7504259640064187,
+        "defensive": 0.086511048949509,
+        "objective_focused": 0.13579425419795915,
+        "exploration": 0.05,
+        "group_play": 0.19830045447906455
+      },
+      "timestamp": 1756923629.3538442
+    },
+    {
+      "game": 5687,
+      "win_rate": 0.7881132407244593,
+      "score": 3,
+      "strategy_weights": {
+        "aggressive": 0.7504259640064187,
+        "defensive": 0.086511048949509,
+        "objective_focused": 0.13579425419795915,
+        "exploration": 0.05,
+        "group_play": 0.19830045447906455
+      },
+      "timestamp": 1756923629.5512688
+    },
+    {
+      "game": 5688,
+      "win_rate": 0.7881504922644164,
+      "score": 1,
+      "strategy_weights": {
+        "aggressive": 0.7504259640064187,
+        "defensive": 0.086511048949509,
+        "objective_focused": 0.13579425419795915,
+        "exploration": 0.05,
+        "group_play": 0.19830045447906455
+      },
+      "timestamp": 1756923629.660944
+    },
+    {
+      "game": 5689,
+      "win_rate": 0.7881877307083845,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.7504259640064187,
+        "defensive": 0.086511048949509,
+        "objective_focused": 0.13579425419795915,
+        "exploration": 0.05,
+        "group_play": 0.19830045447906455
+      },
+      "timestamp": 1756923629.776905
+    },
+    {
+      "game": 5690,
+      "win_rate": 0.7882249560632689,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.7504259640064187,
+        "defensive": 0.086511048949509,
+        "objective_focused": 0.13579425419795915,
+        "exploration": 0.05,
+        "group_play": 0.19830045447906455
+      },
+      "timestamp": 1756923629.9432487
+    },
+    {
+      "game": 5691,
+      "win_rate": 0.7880864522930944,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.775949369039098,
+        "defensive": 0.09151662656886622,
+        "objective_focused": 0.15332271944064527,
+        "exploration": 0.05,
+        "group_play": 0.2326187689816484
+      },
+      "timestamp": 1756923630.1100044
+    },
+    {
+      "game": 5692,
+      "win_rate": 0.7879479971890373,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.775949369039098,
+        "defensive": 0.09151662656886622,
+        "objective_focused": 0.15332271944064527,
+        "exploration": 0.05,
+        "group_play": 0.2326187689816484
+      },
+      "timestamp": 1756923630.2433748
+    },
+    {
+      "game": 5693,
+      "win_rate": 0.7879852450377657,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.775949369039098,
+        "defensive": 0.09151662656886622,
+        "objective_focused": 0.15332271944064527,
+        "exploration": 0.05,
+        "group_play": 0.2326187689816484
+      },
+      "timestamp": 1756923630.3950574
+    },
+    {
+      "game": 5694,
+      "win_rate": 0.7880224798033018,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.775949369039098,
+        "defensive": 0.09151662656886622,
+        "objective_focused": 0.15332271944064527,
+        "exploration": 0.05,
+        "group_play": 0.2326187689816484
+      },
+      "timestamp": 1756923630.6052704
+    },
+    {
+      "game": 5695,
+      "win_rate": 0.7880597014925373,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.775949369039098,
+        "defensive": 0.09151662656886622,
+        "objective_focused": 0.15332271944064527,
+        "exploration": 0.05,
+        "group_play": 0.2326187689816484
+      },
+      "timestamp": 1756923630.8629458
+    },
+    {
+      "game": 5696,
+      "win_rate": 0.7880969101123596,
+      "score": 3,
+      "strategy_weights": {
+        "aggressive": 0.7963263464912876,
+        "defensive": 0.12597798340615812,
+        "objective_focused": 0.1513856005018876,
+        "exploration": 0.09621742913366788,
+        "group_play": 0.25920959274948463
+      },
+      "timestamp": 1756923631.0449674
+    },
+    {
+      "game": 5697,
+      "win_rate": 0.7881341056696507,
+      "score": 4,
+      "strategy_weights": {
+        "aggressive": 0.7963263464912876,
+        "defensive": 0.12597798340615812,
+        "objective_focused": 0.1513856005018876,
+        "exploration": 0.09621742913366788,
+        "group_play": 0.25920959274948463
+      },
+      "timestamp": 1756923631.3415549
+    },
+    {
+      "game": 5698,
+      "win_rate": 0.7881712881712881,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.7963263464912876,
+        "defensive": 0.12597798340615812,
+        "objective_focused": 0.1513856005018876,
+        "exploration": 0.09621742913366788,
+        "group_play": 0.25920959274948463
+      },
+      "timestamp": 1756923631.4933941
+    },
+    {
+      "game": 5699,
+      "win_rate": 0.7882084576241446,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.7963263464912876,
+        "defensive": 0.12597798340615812,
+        "objective_focused": 0.1513856005018876,
+        "exploration": 0.09621742913366788,
+        "group_play": 0.25920959274948463
+      },
+      "timestamp": 1756923631.6660109
+    },
+    {
+      "game": 5700,
+      "win_rate": 0.7882456140350877,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.7963263464912876,
+        "defensive": 0.12597798340615812,
+        "objective_focused": 0.1513856005018876,
+        "exploration": 0.09621742913366788,
+        "group_play": 0.25920959274948463
+      },
+      "timestamp": 1756923631.9310696
+    },
+    {
+      "game": 5701,
+      "win_rate": 0.7881073495877916,
+      "score": 0,
+      "strategy_weights": {
+        "aggressive": 0.7676333412628998,
+        "defensive": 0.08406429651414707,
+        "objective_focused": 0.19217570756418945,
+        "exploration": 0.13542120259831225,
+        "group_play": 0.23212684912994053
+      },
+      "timestamp": 1756923632.1423454
+    }
+  ],
+  "strategy_weights": {
+    "aggressive": 0.7676333412628998,
+    "defensive": 0.08406429651414707,
+    "objective_focused": 0.19217570756418945,
+    "exploration": 0.13542120259831225,
+    "group_play": 0.23212684912994053
+  },
+  "strategy_performance": {},
+  "generation": 1139,
+  "evolution_history": [
+    {
+      "generation": 1090,
+      "weights": {
+        "aggressive": 0.5417847108513945,
+        "defensive": 0.13570193393113733,
+        "objective_focused": 0.3449761716073281,
+        "exploration": 0.25117409706900584,
+        "group_play": 0.4269617249791099
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.4
+      },
+      "timestamp": 1756923586.5013008
+    },
+    {
+      "generation": 1091,
+      "weights": {
+        "aggressive": 0.5457178688315397,
+        "defensive": 0.16400962994202667,
+        "objective_focused": 0.33785609482002926,
+        "exploration": 0.22510774472328882,
+        "group_play": 0.4631942069661441
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.1
+      },
+      "timestamp": 1756923587.4317036
+    },
+    {
+      "generation": 1092,
+      "weights": {
+        "aggressive": 0.5748729308393348,
+        "defensive": 0.12546245278433524,
+        "objective_focused": 0.3069241753114966,
+        "exploration": 0.1856013898280488,
+        "group_play": 0.4708656049534803
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.2
+      },
+      "timestamp": 1756923588.6294923
+    },
+    {
+      "generation": 1093,
+      "weights": {
+        "aggressive": 0.6059778115621725,
+        "defensive": 0.11787165808573596,
+        "objective_focused": 0.2616098118925375,
+        "exploration": 0.22987367605744202,
+        "group_play": 0.4450923293926843
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.2
+      },
+      "timestamp": 1756923589.669444
+    },
+    {
+      "generation": 1094,
+      "weights": {
+        "aggressive": 0.6030546925093987,
+        "defensive": 0.15293715846029,
+        "objective_focused": 0.31158493462632625,
+        "exploration": 0.24165868101569424,
+        "group_play": 0.4208285907886923
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.0
+      },
+      "timestamp": 1756923590.6390462
+    },
+    {
+      "generation": 1095,
+      "weights": {
+        "aggressive": 0.6362284833728273,
+        "defensive": 0.13964868464679336,
+        "objective_focused": 0.32637538260792676,
+        "exploration": 0.24353915796534129,
+        "group_play": 0.3765169715075822
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.1
+      },
+      "timestamp": 1756923591.418029
+    },
+    {
+      "generation": 1096,
+      "weights": {
+        "aggressive": 0.6398101517748811,
+        "defensive": 0.1581516979198807,
+        "objective_focused": 0.2882524338697032,
+        "exploration": 0.2579996468000954,
+        "group_play": 0.3499345791969851
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.4
+      },
+      "timestamp": 1756923592.3372443
+    },
+    {
+      "generation": 1097,
+      "weights": {
+        "aggressive": 0.5983771559316369,
+        "defensive": 0.13334778031566988,
+        "objective_focused": 0.31669802820390636,
+        "exploration": 0.2519288185834948,
+        "group_play": 0.34440519084330223
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.3
+      },
+      "timestamp": 1756923593.369163
+    },
+    {
+      "generation": 1098,
+      "weights": {
+        "aggressive": 0.6363994415086676,
+        "defensive": 0.12950181749305134,
+        "objective_focused": 0.31767892533324726,
+        "exploration": 0.22203051107280425,
+        "group_play": 0.31580769093242755
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.0
+      },
+      "timestamp": 1756923594.2330596
+    },
+    {
+      "generation": 1099,
+      "weights": {
+        "aggressive": 0.5983516820587669,
+        "defensive": 0.1040519175147609,
+        "objective_focused": 0.26792772897985095,
+        "exploration": 0.17755435481453063,
+        "group_play": 0.34519485069834177
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.1
+      },
+      "timestamp": 1756923595.2646751
+    },
+    {
+      "generation": 1100,
+      "weights": {
+        "aggressive": 0.6006126575213901,
+        "defensive": 0.09514842757653838,
+        "objective_focused": 0.23737443065495442,
+        "exploration": 0.15647502933709498,
+        "group_play": 0.37190928127456924
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.4
+      },
+      "timestamp": 1756923596.272491
+    },
+    {
+      "generation": 1101,
+      "weights": {
+        "aggressive": 0.6479711368356327,
+        "defensive": 0.0906656986854482,
+        "objective_focused": 0.23015986048475634,
+        "exploration": 0.17011945718201138,
+        "group_play": 0.40822294687864374
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.3
+      },
+      "timestamp": 1756923597.3450909
+    },
+    {
+      "generation": 1102,
+      "weights": {
+        "aggressive": 0.6115734268131696,
+        "defensive": 0.11532695420993246,
+        "objective_focused": 0.27794698134923856,
+        "exploration": 0.1472586113087812,
+        "group_play": 0.36332181347670844
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.3
+      },
+      "timestamp": 1756923598.3657813
+    },
+    {
+      "generation": 1103,
+      "weights": {
+        "aggressive": 0.6265848072521429,
+        "defensive": 0.1313381020363717,
+        "objective_focused": 0.3181502196627283,
+        "exploration": 0.09992357253865988,
+        "group_play": 0.32965598208643776
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.3
+      },
+      "timestamp": 1756923599.3246467
+    },
+    {
+      "generation": 1104,
+      "weights": {
+        "aggressive": 0.5788655945696412,
+        "defensive": 0.16252828546904427,
+        "objective_focused": 0.30466989526072463,
+        "exploration": 0.1209603453147814,
+        "group_play": 0.2950880796497503
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.0
+      },
+      "timestamp": 1756923600.4128625
+    },
+    {
+      "generation": 1105,
+      "weights": {
+        "aggressive": 0.6010735112749896,
+        "defensive": 0.20012034735112352,
+        "objective_focused": 0.32729332997265087,
+        "exploration": 0.11361150420061018,
+        "group_play": 0.2923506120504913
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.6
+      },
+      "timestamp": 1756923601.135882
+    },
+    {
+      "generation": 1106,
+      "weights": {
+        "aggressive": 0.5908229862871386,
+        "defensive": 0.1835808743931347,
+        "objective_focused": 0.33006833044138234,
+        "exploration": 0.15650256510457927,
+        "group_play": 0.24422723887693254
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 1.1
+      },
+      "timestamp": 1756923602.1894715
+    },
+    {
+      "generation": 1107,
+      "weights": {
+        "aggressive": 0.5940256877703309,
+        "defensive": 0.21289806222960633,
+        "objective_focused": 0.2924401827583115,
+        "exploration": 0.2029364336169166,
+        "group_play": 0.2579182435921493
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.5
+      },
+      "timestamp": 1756923603.0884736
+    },
+    {
+      "generation": 1108,
+      "weights": {
+        "aggressive": 0.5480086065926815,
+        "defensive": 0.23633734578705598,
+        "objective_focused": 0.26482354726302354,
+        "exploration": 0.22500545137159672,
+        "group_play": 0.23281477705514816
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.0
+      },
+      "timestamp": 1756923604.1568165
+    },
+    {
+      "generation": 1109,
+      "weights": {
+        "aggressive": 0.56793496160836,
+        "defensive": 0.22755662707355317,
+        "objective_focused": 0.29913223391838056,
+        "exploration": 0.20824452148136258,
+        "group_play": 0.21437367780256344
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.3
+      },
+      "timestamp": 1756923605.0000932
+    },
+    {
+      "generation": 1110,
+      "weights": {
+        "aggressive": 0.5634510217578214,
+        "defensive": 0.21062217023812901,
+        "objective_focused": 0.32537861571108984,
+        "exploration": 0.24563035724186516,
+        "group_play": 0.18911311390505306
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.5
+      },
+      "timestamp": 1756923606.083482
+    },
+    {
+      "generation": 1111,
+      "weights": {
+        "aggressive": 0.5853724316713235,
+        "defensive": 0.19953349094884504,
+        "objective_focused": 0.28514793722214105,
+        "exploration": 0.19734200567248777,
+        "group_play": 0.17352888058802532
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.3
+      },
+      "timestamp": 1756923607.0292685
+    },
+    {
+      "generation": 1112,
+      "weights": {
+        "aggressive": 0.604368562238891,
+        "defensive": 0.18647572021583983,
+        "objective_focused": 0.2727580971948613,
+        "exploration": 0.16666991156063754,
+        "group_play": 0.17268354537706537
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.1
+      },
+      "timestamp": 1756923607.9193025
+    },
+    {
+      "generation": 1113,
+      "weights": {
+        "aggressive": 0.5558257480132867,
+        "defensive": 0.20799733813879712,
+        "objective_focused": 0.253195538287216,
+        "exploration": 0.1178397142569585,
+        "group_play": 0.16611137043302276
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.7
+      },
+      "timestamp": 1756923608.9073164
+    },
+    {
+      "generation": 1114,
+      "weights": {
+        "aggressive": 0.5360374951039165,
+        "defensive": 0.21906998853362553,
+        "objective_focused": 0.2982548512546056,
+        "exploration": 0.09356061945215802,
+        "group_play": 0.21109312888732903
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.7
+      },
+      "timestamp": 1756923609.8767617
+    },
+    {
+      "generation": 1115,
+      "weights": {
+        "aggressive": 0.5576107292213918,
+        "defensive": 0.19226542414960968,
+        "objective_focused": 0.2649697886202415,
+        "exploration": 0.11246161125557301,
+        "group_play": 0.17303728536289972
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.3
+      },
+      "timestamp": 1756923610.7472026
+    },
+    {
+      "generation": 1116,
+      "weights": {
+        "aggressive": 0.5299819364152654,
+        "defensive": 0.1683645009364202,
+        "objective_focused": 0.30434712648274775,
+        "exploration": 0.1529131269452946,
+        "group_play": 0.1515923799377722
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.3
+      },
+      "timestamp": 1756923611.6464422
+    },
+    {
+      "generation": 1117,
+      "weights": {
+        "aggressive": 0.5786055801589008,
+        "defensive": 0.12118800606259733,
+        "objective_focused": 0.26170268508295863,
+        "exploration": 0.18059104637058393,
+        "group_play": 0.14107073242524618
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.3
+      },
+      "timestamp": 1756923612.403445
+    },
+    {
+      "generation": 1118,
+      "weights": {
+        "aggressive": 0.5541041603138267,
+        "defensive": 0.07953560125535566,
+        "objective_focused": 0.2249114374147464,
+        "exploration": 0.14946388611368133,
+        "group_play": 0.1010242854664188
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.6
+      },
+      "timestamp": 1756923613.256067
+    },
+    {
+      "generation": 1119,
+      "weights": {
+        "aggressive": 0.5931883561559161,
+        "defensive": 0.05,
+        "objective_focused": 0.25355258128026237,
+        "exploration": 0.1807095895661431,
+        "group_play": 0.10704988008780386
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 1.2
+      },
+      "timestamp": 1756923614.0656757
+    },
+    {
+      "generation": 1120,
+      "weights": {
+        "aggressive": 0.5863693757876423,
+        "defensive": 0.05,
+        "objective_focused": 0.218885524378774,
+        "exploration": 0.1680653175430512,
+        "group_play": 0.08502643305021615
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 1.3
+      },
+      "timestamp": 1756923614.8292458
+    },
+    {
+      "generation": 1121,
+      "weights": {
+        "aggressive": 0.6332763562632611,
+        "defensive": 0.09687342255974835,
+        "objective_focused": 0.17665313090730841,
+        "exploration": 0.15401380243751017,
+        "group_play": 0.08111878875199201
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.5
+      },
+      "timestamp": 1756923615.7607632
+    },
+    {
+      "generation": 1122,
+      "weights": {
+        "aggressive": 0.6441749255814953,
+        "defensive": 0.052972343929150595,
+        "objective_focused": 0.21813314897896252,
+        "exploration": 0.1676989238852411,
+        "group_play": 0.12580198138238524
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.1
+      },
+      "timestamp": 1756923616.6560204
+    },
+    {
+      "generation": 1123,
+      "weights": {
+        "aggressive": 0.6226746161823156,
+        "defensive": 0.06420018018359376,
+        "objective_focused": 0.22081360766736588,
+        "exploration": 0.16703958529121793,
+        "group_play": 0.17085014475766935
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.6
+      },
+      "timestamp": 1756923617.4205701
+    },
+    {
+      "generation": 1124,
+      "weights": {
+        "aggressive": 0.5775261678600692,
+        "defensive": 0.05,
+        "objective_focused": 0.26047285442962226,
+        "exploration": 0.12532285969010998,
+        "group_play": 0.1760065090782711
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.6
+      },
+      "timestamp": 1756923618.3111475
+    },
+    {
+      "generation": 1125,
+      "weights": {
+        "aggressive": 0.5501762515545222,
+        "defensive": 0.06613450380195925,
+        "objective_focused": 0.24577609590835225,
+        "exploration": 0.15703624509374597,
+        "group_play": 0.2030203165876603
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.3
+      },
+      "timestamp": 1756923619.2531648
+    },
+    {
+      "generation": 1126,
+      "weights": {
+        "aggressive": 0.5994036328794898,
+        "defensive": 0.05,
+        "objective_focused": 0.22311186603761185,
+        "exploration": 0.12229363136711749,
+        "group_play": 0.18396017872276005
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.5
+      },
+      "timestamp": 1756923620.083789
+    },
+    {
+      "generation": 1127,
+      "weights": {
+        "aggressive": 0.6055654741353876,
+        "defensive": 0.06465005776558706,
+        "objective_focused": 0.17958839941281574,
+        "exploration": 0.11454807058139439,
+        "group_play": 0.1468954400866457
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.2
+      },
+      "timestamp": 1756923621.0263536
+    },
+    {
+      "generation": 1128,
+      "weights": {
+        "aggressive": 0.6329270717790898,
+        "defensive": 0.08761182971326448,
+        "objective_focused": 0.18836237860284952,
+        "exploration": 0.12478918819998686,
+        "group_play": 0.1260545959228981
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.1
+      },
+      "timestamp": 1756923621.892587
+    },
+    {
+      "generation": 1129,
+      "weights": {
+        "aggressive": 0.6488974446600602,
+        "defensive": 0.08753627849902448,
+        "objective_focused": 0.18266449482350888,
+        "exploration": 0.14281869549792114,
+        "group_play": 0.09548721298789964
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.1
+      },
+      "timestamp": 1756923622.6817505
+    },
+    {
+      "generation": 1130,
+      "weights": {
+        "aggressive": 0.6621754129921519,
+        "defensive": 0.12737557101378616,
+        "objective_focused": 0.16984040107854298,
+        "exploration": 0.13082144164490578,
+        "group_play": 0.13208647652779537
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.0
+      },
+      "timestamp": 1756923623.5361996
+    },
+    {
+      "generation": 1131,
+      "weights": {
+        "aggressive": 0.705140725553949,
+        "defensive": 0.0852657747618164,
+        "objective_focused": 0.19580519612373626,
+        "exploration": 0.10765497953837586,
+        "group_play": 0.1793377463545519
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.0
+      },
+      "timestamp": 1756923624.4665573
+    },
+    {
+      "generation": 1132,
+      "weights": {
+        "aggressive": 0.7025429184652773,
+        "defensive": 0.05945996284942606,
+        "objective_focused": 0.24326543695455527,
+        "exploration": 0.10459592690060752,
+        "group_play": 0.15655294634591946
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.0
+      },
+      "timestamp": 1756923625.4700754
+    },
+    {
+      "generation": 1133,
+      "weights": {
+        "aggressive": 0.7019687594793173,
+        "defensive": 0.10082352494300621,
+        "objective_focused": 0.20912366928171489,
+        "exploration": 0.08207262512056873,
+        "group_play": 0.18583815075843071
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.0
+      },
+      "timestamp": 1756923626.3675158
+    },
+    {
+      "generation": 1134,
+      "weights": {
+        "aggressive": 0.6809698757833829,
+        "defensive": 0.10181183447805953,
+        "objective_focused": 0.19231324119989912,
+        "exploration": 0.05,
+        "group_play": 0.22263590791316443
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.0
+      },
+      "timestamp": 1756923627.264896
+    },
+    {
+      "generation": 1135,
+      "weights": {
+        "aggressive": 0.7073958492963717,
+        "defensive": 0.05604227613082586,
+        "objective_focused": 0.185360992218596,
+        "exploration": 0.09440177523253729,
+        "group_play": 0.18382075665164516
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.0
+      },
+      "timestamp": 1756923628.301274
+    },
+    {
+      "generation": 1136,
+      "weights": {
+        "aggressive": 0.7504259640064187,
+        "defensive": 0.086511048949509,
+        "objective_focused": 0.13579425419795915,
+        "exploration": 0.05,
+        "group_play": 0.19830045447906455
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.4
+      },
+      "timestamp": 1756923629.1802
+    },
+    {
+      "generation": 1137,
+      "weights": {
+        "aggressive": 0.775949369039098,
+        "defensive": 0.09151662656886622,
+        "objective_focused": 0.15332271944064527,
+        "exploration": 0.05,
+        "group_play": 0.2326187689816484
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.8
+      },
+      "timestamp": 1756923629.9432685
+    },
+    {
+      "generation": 1138,
+      "weights": {
+        "aggressive": 0.7963263464912876,
+        "defensive": 0.12597798340615812,
+        "objective_focused": 0.1513856005018876,
+        "exploration": 0.09621742913366788,
+        "group_play": 0.25920959274948463
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.4
+      },
+      "timestamp": 1756923630.862965
+    },
+    {
+      "generation": 1139,
+      "weights": {
+        "aggressive": 0.7676333412628998,
+        "defensive": 0.08406429651414707,
+        "objective_focused": 0.19217570756418945,
+        "exploration": 0.13542120259831225,
+        "group_play": 0.23212684912994053
+      },
+      "performance": {
+        "win_rate": 1.0,
+        "avg_score": 0.7
+      },
+      "timestamp": 1756923631.9310896
+    }
+  ]
+}
