@@ -147,6 +147,14 @@ class Unit:
         self.moved = True
 
     def attack(self, target_unit, units, objectives):
+        # CORRECTION : Vérifications de sécurité au début
+        if target_unit is None:
+            return False
+
+        if target_unit not in units:
+            return False
+
+        # VOTRE CODE EXISTANT
         if abs(self.x - target_unit.x) <= 1 and abs(self.y - target_unit.y) <= 1:
             dx = target_unit.x - self.x
             dy = target_unit.y - self.y
@@ -182,6 +190,7 @@ class Unit:
                 if target_unit.pv <= 0 and target_unit in units:
                     units.remove(target_unit)
         self.moved = True
+        return True
 
     def get_symbols_on_same_tile(self, units):
         symbols = [u.get_symbol() for u in units if u.x == self.x and u.y == self.y]

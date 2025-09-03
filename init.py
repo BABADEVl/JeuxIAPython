@@ -15,6 +15,14 @@ SELECTED_COLOR = (0, 255, 0)            # Vert pour la sélection
 OBJECTIVE_MAJOR_COLOR = (255, 255, 0)   # Jaune pour objectif majeur
 OBJECTIVE_MINOR_COLOR = (255, 215, 0)   # Doré pour objectif mineur
 
+# Couleurs de base
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+RED = (255, 0, 0)
+GREEN = (0, 255, 0)
+BLUE = (0, 0, 255)
+GRAY = (128, 128, 128)
+
 # Dimensions de l'interface
 BUTTON_WIDTH = 180
 BUTTON_HEIGHT = 102
